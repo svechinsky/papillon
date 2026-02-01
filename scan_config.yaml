@@ -1,0 +1,41 @@
+# Papillion Scan Configuration
+
+device:
+  printer_port: /dev/ttyUSB0
+  printer_baud: 115200
+  hydrophone_channel: 0
+
+# Center position of scan (mm)
+position:
+  x: -2
+  y: -82
+  z: 146.5
+
+# Range around center position (±mm)
+range:
+  x: 3
+  y: 3
+  z: 6
+
+# Step size for each axis (mm)
+step:
+  x: 2
+  y: 2
+  z: 3
+# Acquisition settings
+acquisition:
+  settling_time: 0.5    # seconds to wait after move
+  sample_rate: 1000000  # samples per second
+  num_samples: 1000000    # samples per acquisition
+  voltage_range: 0.1    # input voltage range (V)
+
+# Hydrophone calibration
+hydrophone:
+  sensitivity_db: -250  # dB re 1V/µPa
+  frequency_khz: 250    # operating frequency (kHz)
+
+# Scan options
+options:
+  home_before: false
+  home_after: false
+  output: scan_result   # output file base name
