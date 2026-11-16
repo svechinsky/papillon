@@ -7,21 +7,21 @@ device:
 
 # Center position of scan (mm)
 position:
-  x: -2
-  y: -82
-  z: 146.5
+  x: -3
+  y: -80.5
+  z: 134.5
 
 # Range around center position (±mm)
 range:
-  x: 3
-  y: 3
-  z: 6
+  x: 2
+  y: 1.5
+  z: 4
 
 # Step size for each axis (mm)
 step:
-  x: 2
-  y: 2
-  z: 3
+  x: 1
+  y: 1
+  z: 1
 # Acquisition settings
 acquisition:
   settling_time: 0.5    # seconds to wait after move
